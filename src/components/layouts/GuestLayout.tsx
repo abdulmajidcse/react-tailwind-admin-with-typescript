@@ -1,9 +1,9 @@
 import { Link, Outlet } from "react-router-dom";
-import DarkTheme from "../admin/DarkTheme";
+import DarkTheme from "../auth/DarkTheme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
-export default function AdminGuestLayout() {
+export default function GuestLayout() {
   return (
     <>
       {/* Theme section */}

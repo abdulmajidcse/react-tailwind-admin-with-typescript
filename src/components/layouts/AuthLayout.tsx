@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Footer from "../admin/footer/Footer";
-import Sidebar from "../admin/sidebar/Sidebar";
-import Header from "../admin/header/Header";
+import Footer from "../auth/footer/Footer";
+import Sidebar from "../auth/sidebar/Sidebar";
+import Header from "../auth/header/Header";
 import { Outlet } from "react-router-dom";
 
-export default function AdminAuthLayout() {
+export default function AuthLayout() {
   const [sidebarMenuOpenIs, setSidebarMenuOpenIs] = useState<boolean>(true);
 
   const sidebarMenuClose = () => setSidebarMenuOpenIs(false);

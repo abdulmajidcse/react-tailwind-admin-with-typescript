@@ -6,8 +6,8 @@ import {
   faTruckFast,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
-import Breadcrumb from "./../../components/admin/breadcrumb/Breadcrumb";
-import BreadcrumbLink from "./../../components/admin/breadcrumb/BreadcrumbLink";
+import Breadcrumb from "./../../components/auth/breadcrumb/Breadcrumb";
+import BreadcrumbLink from "./../../components/auth/breadcrumb/BreadcrumbLink";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js/auto";
 import { Line, Doughnut } from "react-chartjs-2";
 

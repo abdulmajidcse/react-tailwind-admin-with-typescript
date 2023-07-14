@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FrontendLayout from "./components/layouts/FrontendLayout";
-import AdminAuthLayout from "./components/layouts/AdminAuthLayout";
+import AuthLayout from "./components/layouts/AuthLayout";
 import Dashboard from "./pages/auth/Dashboard";
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
         <Route path="/" element={<FrontendLayout />}>
           <Route index element={<Home />} />
         </Route>
-        <Route path="auth" element={<AdminAuthLayout />}>
+        <Route path="auth" element={<AuthLayout />}>
           <Route index element={<Dashboard />} />
         </Route>
       </Routes>

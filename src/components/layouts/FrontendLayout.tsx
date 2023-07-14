@@ -1,4 +1,4 @@
-import DarkTheme from "../admin/DarkTheme";
+import DarkTheme from "../auth/DarkTheme";
 import { Outlet } from "react-router-dom";
 
 export default function FrontendLayout() {
