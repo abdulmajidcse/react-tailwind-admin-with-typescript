@@ -33,13 +33,13 @@ export default function Forms() {
             <div>
               <label
                 className="block font-medium text-sm text-gray-700 dark:text-gray-300"
-                htmlFor="name"
+                htmlFor="name_2"
               >
                 Name
               </label>
               <input
                 className="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm mt-1 block w-full"
-                id="name"
+                id="name_2"
                 name="name"
                 type="text"
                 autoComplete="name"
@@ -174,14 +174,13 @@ export default function Forms() {
               <select
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-500 dark:focus:border-indigo-500 mt-1"
                 id="parent_id_1"
+                defaultValue={2}
               >
                 <option value="">Select a Category</option>
                 <option value={39}>Accessories</option>
                 <option value={12}>Face</option>
                 <option value={43}>Fashion &amp; Lifestyle</option>
-                <option value={2} selected>
-                  Hair Care
-                </option>
+                <option value={2}>Hair Care</option>
                 <option value={5}>Makeup</option>
                 <option value={52}>Men </option>
                 <option value={31}>Skin Care</option>
@@ -209,13 +208,13 @@ export default function Forms() {
           <div className="mb-3">
             <label
               className="block font-medium text-sm text-gray-700 dark:text-gray-300"
-              htmlFor="name"
+              htmlFor="name_1"
             >
               Name
             </label>
             <input
               className="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm mt-1 block w-full"
-              id="name"
+              id="name_1"
               type="text"
               autoComplete="name"
             />
