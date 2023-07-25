@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function NotFound() {
   return (
     <>
-      <h2 className="text-xl">
-        Welcome to ReactJS + TS & TailwindCSS Admin Template
-      </h2>
+      <h2 className="text-xl">404 | Not Found</h2>
       <Link
-        to="/auth"
+        to="/"
         className="text-blue-500 hover:underline hover:text-yellow-500"
       >
-        Go to Dashboard
+        Back to home
       </Link>
     </>
   );
