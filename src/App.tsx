@@ -8,6 +8,7 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import NotFound from "./pages/NotFound";
 import Tables from "./pages/auth/Tables";
+import Forms from "./pages/auth/Forms";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="auth" element={<AuthLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="tables" element={<Tables />} />
+          <Route path="forms" element={<Forms />} />
         </Route>
       </Routes>
     </BrowserRouter>

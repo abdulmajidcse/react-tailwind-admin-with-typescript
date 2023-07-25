@@ -75,8 +75,8 @@ export default function Aside() {
                 New
               </span>
             }
-            active={false}
-            to="/auth"
+            active={location.pathname === "/auth/forms"}
+            to="/auth/forms"
           />
           <SidebarLink
             name="Tables"

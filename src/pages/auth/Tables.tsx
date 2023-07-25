@@ -2,6 +2,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import Breadcrumb from "./../../components/auth/breadcrumb/Breadcrumb";
 import BreadcrumbLink from "./../../components/auth/breadcrumb/BreadcrumbLink";
 import reactImg from "./../../assets/react.svg";
+import { Link } from "react-router-dom";
 
 export default function Tables() {
   return (
@@ -118,12 +119,12 @@ export default function Tables() {
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium dark:text-white">
                 <div className="space-x-2">
                   <div className="space-x-2">
-                    <a
-                      href={reactImg}
+                    <Link
+                      to="/auth/tables"
                       className="underline text-blue-500 hover:no-underline"
                     >
                       Edit
-                    </a>
+                    </Link>
                     <button
                       type="button"
                       className="underline text-red-500 hover:no-underline"
@@ -161,12 +162,12 @@ export default function Tables() {
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium dark:text-white">
                 <div className="space-x-2">
                   <div className="space-x-2">
-                    <a
-                      href={reactImg}
+                    <Link
+                      to="/auth/tables"
                       className="underline text-blue-500 hover:no-underline"
                     >
                       Edit
-                    </a>
+                    </Link>
                     <button
                       type="button"
                       className="underline text-red-500 hover:no-underline"
@@ -204,12 +205,12 @@ export default function Tables() {
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium dark:text-white">
                 <div className="space-x-2">
                   <div className="space-x-2">
-                    <a
-                      href={reactImg}
+                    <Link
+                      to="/auth/tables"
                       className="underline text-blue-500 hover:no-underline"
                     >
                       Edit
-                    </a>
+                    </Link>
                     <button
                       type="button"
                       className="underline text-red-500 hover:no-underline"
