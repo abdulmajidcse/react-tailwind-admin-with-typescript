@@ -124,14 +124,14 @@ export default function Dashboard() {
             <div className="py-3 px-5 bg-gray-100 dark:bg-gray-400/10">
               Sales Report
             </div>
-            <Line data={lineChart} />
+            <Line data={lineChart} className="p-8" />
           </div>
         </div>
         <div className="bg-white dark:bg-white/5 text-slate-800 dark:text-slate-100 shadow rounded-lg overflow-hidden w-full lg:w-4/12">
           <div className="py-3 px-5 bg-gray-100 dark:bg-gray-400/10">
             Order Report
           </div>
-          <Doughnut data={doughnutChart} />
+          <Doughnut data={doughnutChart} className="p-8" />
         </div>
       </section>
     </>

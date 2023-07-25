@@ -34,21 +34,18 @@ export default function AuthLayout() {
 
   return (
     <>
-      <div className="dark:bg-slate-800 dark:highlight-white/5 dark:text-slate-400 min-h-screen">
+      <div className="bg-gray-200 dark:bg-gray-900 dark:text-slate-400 min-h-screen">
         <Header onToggleSidebar={toggleSidebarMenu} />
-
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 md:px-8 bg-slate-50 dark:bg-inherit">
-          <Sidebar show={sidebarMenuOpenIs} onClose={sidebarMenuClose} />
-          <div
-            className={`transition-all duration-300 ${
-              sidebarMenuOpenIs ? "lg:pl-[17rem]" : ""
-            }`}
-          >
-            <main className="pt-5 min-h-[calc(100vh-13rem)]">
-              <Outlet />
-            </main>
-            <Footer />
-          </div>
+        <Sidebar show={sidebarMenuOpenIs} onClose={sidebarMenuClose} />
+        <div
+          className={`transition-all duration-300 px-4 sm:px-6 md:px-8 pt-16 ${
+            sidebarMenuOpenIs ? "lg:ml-[17rem]" : ""
+          }`}
+        >
+          <main className="pt-5 min-h-[calc(100vh-13rem)]">
+            <Outlet />
+          </main>
+          <Footer />
         </div>
       </div>
     </>

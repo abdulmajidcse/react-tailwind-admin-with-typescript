@@ -20,7 +20,7 @@ export default function Header({
 
   return (
     <>
-      <header className="p-4 text-base border-b border-slate-900/10 dark:border-slate-300/10 sticky top-0 z-40 w-full flex-none bg-white/95 dark:bg-slate-800 backdrop-blur">
+      <header className="p-4 text-base border-b border-slate-900/10 dark:border-slate-300/10 fixed top-0 z-40 w-full flex-none bg-white dark:bg-slate-800">
         {/* navbar */}
         <nav className="flex justify-between mx-1">
           <HeaderBrand />

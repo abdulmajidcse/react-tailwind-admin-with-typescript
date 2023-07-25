@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 interface SidebarLinkProps {
   name: string;
   active: boolean;
-  href: string;
+  to: string;
   icon?: IconDefinition;
   topLinkIs?: boolean;
   rightLabel?: ReactElement;
@@ -16,7 +16,7 @@ interface SidebarLinkProps {
 export default function SidebarLink({
   name,
   active,
-  href,
+  to,
   icon = faCircle,
   topLinkIs = true,
   rightLabel,
@@ -25,7 +25,7 @@ export default function SidebarLink({
     <>
       <li className={`${topLinkIs ? "mb-1" : ""}`}>
         <Link
-          to={href}
+          to={to}
           className={`${
             topLinkIs ? "top-link" : "sub-link"
           } flex items-center lg:leading-6 relative rounded p-2 hover:bg-gray-300 dark:hover:bg-slate-300/10 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-600 ${

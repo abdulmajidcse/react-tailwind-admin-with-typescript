@@ -17,7 +17,7 @@ export default function Sidebar({
         onClick={onClose}
       />
       <div
-        className={`fixed z-20 inset-0 top-[3.8125rem] right-auto w-[17rem] pb-10 px-4 overflow-y-auto bg-white dark:bg-inherit border-r border-slate-900/10 dark:border-slate-300/10 shadow-2xl transition-all duration-300 awesome-scrollbar ${
+        className={`fixed z-20 inset-0 top-[3.8125rem] right-auto w-[17rem] pb-10 px-4 overflow-y-auto bg-white dark:bg-slate-800 border-r border-slate-900/10 dark:border-slate-300/10 shadow-2xl transition-all duration-300 awesome-scrollbar ${
           show ? "lg:left-0" : "-left-[20rem]"
         }`}
       >

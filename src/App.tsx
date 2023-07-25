@@ -7,6 +7,7 @@ import GuestLayout from "./components/layouts/GuestLayout";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import NotFound from "./pages/NotFound";
+import Tables from "./pages/auth/Tables";
 
 export default function App() {
   return (
@@ -17,13 +18,14 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
 
-        <Route path="auth" element={<AuthLayout />}>
-          <Route index element={<Dashboard />} />
-        </Route>
-
         <Route path="auth" element={<GuestLayout />}>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+        </Route>
+
+        <Route path="auth" element={<AuthLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="tables" element={<Tables />} />
         </Route>
       </Routes>
     </BrowserRouter>

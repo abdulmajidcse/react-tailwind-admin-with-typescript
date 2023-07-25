@@ -20,11 +20,11 @@ export default function Aside() {
   return (
     <>
       <aside className="lg:text-sm lg:leading-6 relative mt-8 ta-sidebar">
-        <ul className="text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 text-base">
+        <ul className="text-slate-900 dark:text-slate-300 text-base">
           <SidebarLink
             name="Dashboard"
             icon={faGrip}
-            href="/auth"
+            to="/auth"
             active={location.pathname === "/auth"}
           />
           <SidebarDropdown name="Page" icon={faFileLines} active={false}>
@@ -33,7 +33,7 @@ export default function Aside() {
                 name="Blank"
                 topLinkIs={false}
                 active={false}
-                href="/auth"
+                to="/auth"
               />
               <SidebarDropdown name="Auth" topLinkIs={false} active={false}>
                 <>
@@ -42,14 +42,14 @@ export default function Aside() {
                     icon={faCircleDot}
                     topLinkIs={false}
                     active={false}
-                    href="/auth/register"
+                    to="/auth/register"
                   />
                   <SidebarLink
                     name="Login"
                     icon={faCircleDot}
                     topLinkIs={false}
                     active={false}
-                    href="/auth/login"
+                    to="/auth/login"
                   />
                 </>
               </SidebarDropdown>
@@ -57,13 +57,13 @@ export default function Aside() {
                 name="404 Error"
                 topLinkIs={false}
                 active={false}
-                href="/auth"
+                to="/auth"
               />
               <SidebarLink
                 name="500 Error"
                 topLinkIs={false}
                 active={false}
-                href="/auth"
+                to="/auth"
               />
             </>
           </SidebarDropdown>
@@ -76,39 +76,34 @@ export default function Aside() {
               </span>
             }
             active={false}
-            href="/auth"
+            to="/auth"
           />
           <SidebarLink
             name="Tables"
             icon={faTableList}
-            active={false}
-            href="/auth"
+            to="/auth/tables"
+            active={location.pathname === "/auth/tables"}
           />
           <SidebarHeading title="Components" />
           <SidebarLink
             name="Alerts"
             icon={faTriangleExclamation}
             active={false}
-            href="/auth"
+            to="/auth"
           />
           <SidebarLink
             name="Buttons"
             icon={faToggleOff}
             active={false}
-            href="/auth"
+            to="/auth"
           />
           <SidebarLink
             name="Cards"
             icon={faBarsStaggered}
             active={false}
-            href="/auth"
+            to="/auth"
           />
-          <SidebarLink
-            name="Modals"
-            icon={faCube}
-            active={false}
-            href="/auth"
-          />
+          <SidebarLink name="Modals" icon={faCube} active={false} to="/auth" />
         </ul>
       </aside>
     </>

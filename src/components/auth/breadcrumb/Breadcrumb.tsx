@@ -11,7 +11,7 @@ export default function Breadcrumb({
     <>
       <div className="md:flex md:justify-between mb-6">
         <div>
-          <h1 className="text-3xl sm:text-4xl text-slate-900 tracking-tight dark:text-slate-200">
+          <h1 className="text-3xl text-slate-900 tracking-tight dark:text-slate-200">
             {title}
           </h1>
         </div>
