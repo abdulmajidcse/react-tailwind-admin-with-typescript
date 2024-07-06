@@ -2,10 +2,12 @@ import { useEffect, useState } from "react";
 import Footer from "../auth/footer/Footer";
 import Sidebar from "../auth/sidebar/Sidebar";
 import Header from "../auth/header/Header";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 export default function AuthLayout() {
+  const location = useLocation();
   const [sidebarMenuOpenIs, setSidebarMenuOpenIs] = useState<boolean>(true);
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
 
   const sidebarMenuClose = () => setSidebarMenuOpenIs(false);
   const toggleSidebarMenu = () =>
@@ -15,10 +17,10 @@ export default function AuthLayout() {
   const matchMediaForSidebar = (e: MediaQueryListEvent | MediaQueryList) => {
     if (e.matches) {
       // in lg screen
-      setSidebarMenuOpenIs(true);
+      setIsLargeScreen(true);
     } else {
       // in less than lg screen
-      setSidebarMenuOpenIs(false);
+      setIsLargeScreen(false);
     }
   };
 
@@ -31,6 +33,14 @@ export default function AuthLayout() {
       windowWidthLg.removeEventListener("change", matchMediaForSidebar);
     };
   }, []);
+
+  useEffect(() => {
+    if (isLargeScreen) {
+      setSidebarMenuOpenIs(true);
+    } else {
+      sidebarMenuClose();
+    }
+  }, [location, isLargeScreen]);
 
   return (
     <>
